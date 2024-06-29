@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Verify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Block Verify</h1>
+    <div style="
+      display: grid;
+      grid-template-columns: 900px 700px;
+    ">
+    <div class="container">
+        
+        
+
+        <div class="section">
+            <h2>New Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="sender" placeholder="Sender Address" required>
+                <input type="text" id="recipient" placeholder="Recipient Address" required>
+                <input type="text" id="product_id" placeholder="Product ID" required>
+                <input type="text" id="product_name" placeholder="Product Name" required>
+                <input type="text" id="status" placeholder="Status" required>
+                <button type="submit">Submit Transaction</button>
+            </form>
+            <div id="transaction-message"></div>
+        </div>
+</div>
+<div class="container2">
+        
+            <h2>Blockchain</h2>
+            <button id="view-chain-button">View Full Chain</button>
+            <pre id="blockchain-view"></pre>
+</div>
+    
+</div>
+
+
+        <div class="container1">
+            <div class="section">
+                <h2>Mine a Block</h2>
+                <button id="mine-button">Mine</button>
+                <div id="mine-message"></div>
+            </div>
+        </div>
+        <div class="container3">
+        
+            <h2>Product History</h2>
+            <input type="text" id="product-id" placeholder="Product ID">
+            <button id="view-product-button">View Product History</button>
+        
+            <pre id="product-history"></pre>
+        </div>
+        
+
+        <div class="container4">
+        <div class="section">
+            <h2>Check Authenticity</h2>
+            <form  id="authenticity-form">
+            <input type="text" id="auth-product-id" placeholder="Enter Product ID">
+            <button type="submit" size="5px">Verify</button>
+            <pre id="authenticity-result"></pre>
+        </form>
+        
+</div>
+</div>      
+    
+    
+
+</div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
